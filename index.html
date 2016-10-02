@@ -2452,6 +2452,7 @@
                     <div class="list">
                         <p>Places</p>
                         <ul>
+                            <li class="recent" data-folder="recent">Recent</li>
                             <li class="home selected" data-folder="home">Home</li>
                             <li class="desktop" data-folder="5">Desktop</li>
                             <li class="documents" data-folder="0">Documents</li>
@@ -2459,7 +2460,8 @@
                             <li class="music" data-folder="2">Music</li>
                             <li class="pictures" data-folder="4">Pictures</li>
                             <li class="videos" data-folder="3">Videos</li>
-                            <li class="rubbish" data-folder="bin">Rubbish bin</li>
+                            <li class="rubbish" data-folder="bin">Trash</li>
+                            <li class="network" data-folder="network">Network</li>
                         </ul>
                     </div>
                 </div>
@@ -2622,6 +2624,7 @@
             <p class="_wrote_">wrote</p>
             <p class="_original_message_">Original Message</p>
             <p class="_fwd_">Fwd</p>
+            <p class="_recent_folder_">Recent</p>
             <p class="_home_folder_">Home</p>
             <p class="_desktop_folder_">Desktop</p>
             <p class="_pictures_folder_">Pictures</p>
@@ -6455,7 +6458,11 @@
                 padding-top: 4px;
                 padding-right: 10px
             }
-
+            
+            .folder .list ul li.recent {
+                background: url(../img/folder/recent-icon.png) no-repeat 20px 5px
+            }
+            
             .folder .list ul li.home {
                 background: url(../img/folder/home-icon.png) no-repeat 20px 5px
             }
